@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    background-color: #f00;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    background-color: yellow;
+}
+
+@media all and (max-width: 960px) and (min-width: 0px),
+(min-width: 0px) {
+    .grid {
+    width: 80%;
+    }
+}
+@media all and (min-width: 960px),
+(min-width: 960px) {
+    .grid {
+    width: 50%;
+    }
+}
+@media all and (min-width: 1200px),
+(min-width: 1200px) {
+    .grid {
+    width: 100%;
+    }
+}
